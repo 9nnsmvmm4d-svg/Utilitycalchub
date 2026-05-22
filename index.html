@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5337499996286320"
-     crossorigin="anonymous"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UtilityCalc Hub — AdSense Revenue Calculator</title>
-  <meta name="description" content="Free AdSense revenue calculator. Enter pageviews, CPC, CTR, and ads per page to instantly see daily and monthly earnings. No sign-up required." />
-  <meta name="keywords" content="adsense calculator, revenue calculator, cpc calculator, ctr calculator, website earnings calculator" />
+  <title>UtilityCalc Hub — AdSense Revenue Calculator &amp; Monetisation Blog</title>
+  <meta name="description" content="Free AdSense revenue calculator plus expert guides on growing your website income. Calculate earnings, learn to increase CPC, RPM, and pageviews." />
+  <meta name="keywords" content="adsense calculator, revenue calculator, increase adsense cpc, website rpm, grow pageviews, website monetisation" />
   <link rel="canonical" href="https://utilitycalchub.com/" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="UtilityCalc Hub — AdSense Revenue Calculator" />
-  <meta property="og:description" content="Instantly calculate your AdSense daily and monthly revenue." />
+  <meta property="og:title" content="UtilityCalc Hub — AdSense Revenue Calculator &amp; Monetisation Blog" />
+  <meta property="og:description" content="Free AdSense calculator plus expert guides on growing your website income." />
   <meta property="og:url" content="https://utilitycalchub.com/" />
   <meta name="twitter:card" content="summary_large_image" />
 
@@ -53,7 +51,9 @@
     .container{width:100%;max-width:var(--max);margin:0 auto;padding:0 20px;}
     .page{display:none;}
     .page.active{display:block;}
-    nav{position:sticky;top:0;z-index:200;background:rgba(8,8,14,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);}
+
+    /* Nav */
+    nav{position:sticky;top:0;z-index:200;background:rgba(8,8,14,.95);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);}
     .nav-inner{display:flex;align-items:center;justify-content:space-between;height:58px;max-width:var(--max);margin:0 auto;padding:0 20px;gap:10px;}
     .logo{font-family:var(--font-display);font-size:1.45rem;letter-spacing:.04em;cursor:pointer;flex-shrink:0;}
     .logo span{color:var(--amber);}
@@ -77,6 +77,8 @@
     .rate-badge{display:flex;align-items:center;gap:9px;background:rgba(96,165,250,.07);border:1px solid rgba(96,165,250,.22);border-radius:8px;padding:9px 14px;font-size:.8rem;color:var(--muted);margin-bottom:20px;flex-wrap:wrap;}
     .rate-badge strong{color:var(--text);}
     .rate-badge .rate-val{color:var(--amber);font-weight:700;}
+
+    /* Hero */
     .hero{padding:72px 20px 56px;text-align:center;position:relative;overflow:hidden;}
     .hero::before{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 60% 40% at 50% -10%,rgba(245,200,66,.13) 0%,transparent 70%),radial-gradient(ellipse 40% 30% at 80% 80%,rgba(61,214,140,.05) 0%,transparent 60%);}
     .eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(245,200,66,.1);border:1px solid rgba(245,200,66,.25);border-radius:100px;padding:5px 16px;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--amber);margin-bottom:24px;}
@@ -97,6 +99,8 @@
     .sec-tag{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--amber);margin-bottom:10px;}
     .sec-h{font-family:var(--font-display);font-size:clamp(1.7rem,4vw,2.6rem);letter-spacing:.02em;line-height:1.1;margin-bottom:8px;}
     .sec-sub{color:var(--muted);font-size:.92rem;max-width:520px;margin-bottom:28px;}
+
+    /* Calculator */
     .calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--border);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;}
     .calc-panel{background:var(--surface);padding:32px 28px;}
     .panel-head{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:24px;letter-spacing:.04em;text-transform:uppercase;display:flex;align-items:center;gap:8px;}
@@ -133,11 +137,15 @@
     .card-title{font-weight:700;font-size:.95rem;margin-bottom:6px;}
     .card-desc{font-size:.8rem;color:var(--muted);line-height:1.5;margin-bottom:14px;}
     .card-link{font-size:.76rem;font-weight:700;color:var(--amber);}
+
+    /* Share */
     .share-section{background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:36px 20px;text-align:center;margin:56px 0;}
     .share-label{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:16px;}
     .share-buttons{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}
     .share-btn{display:inline-flex;align-items:center;gap:8px;padding:9px 18px;border-radius:8px;font-size:.8rem;font-weight:600;cursor:pointer;border:1px solid var(--border);background:var(--surface2);color:var(--text);transition:all .2s;text-decoration:none;font-family:var(--font-body);}
     .share-btn:hover{border-color:var(--amber);color:var(--amber);text-decoration:none;}
+
+    /* FAQ */
     .faq-item{border-bottom:1px solid var(--border);}
     .faq-q{width:100%;background:none;border:none;color:var(--text);font-family:var(--font-body);font-size:.95rem;font-weight:600;text-align:left;padding:18px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;}
     .faq-arrow{width:22px;height:22px;min-width:22px;border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.65rem;color:var(--muted);transition:transform .25s,border-color .2s;}
@@ -145,17 +153,53 @@
     .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;}
     .faq-item.open .faq-a{max-height:300px;}
     .faq-a-inner{padding-bottom:18px;color:var(--muted);font-size:.88rem;line-height:1.75;}
+
+    /* Tool pages */
     .tool-page{padding:56px 0 80px;}
     .back-btn{display:inline-flex;align-items:center;gap:6px;background:none;border:none;color:var(--muted);font-family:var(--font-body);font-size:.82rem;cursor:pointer;margin-bottom:32px;padding:0;}
     .back-btn:hover{color:var(--amber);}
     .simple-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:32px;max-width:540px;}
     .divider{border:none;border-top:1px solid var(--border);margin:20px 0;}
+
+    /* Blog listing */
+    .blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px;margin-top:36px;}
+    .blog-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;cursor:pointer;transition:all .2s;}
+    .blog-card:hover{border-color:rgba(245,200,66,.4);transform:translateY(-3px);box-shadow:0 12px 32px rgba(0,0,0,.3);}
+    .blog-card-body{padding:24px;}
+    .blog-tag{display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--amber);background:rgba(245,200,66,.1);border-radius:4px;padding:3px 8px;margin-bottom:14px;}
+    .blog-card-title{font-size:1.05rem;font-weight:700;line-height:1.4;margin-bottom:10px;}
+    .blog-card-excerpt{font-size:.84rem;color:var(--muted);line-height:1.6;margin-bottom:16px;}
+    .blog-meta{display:flex;align-items:center;gap:12px;font-size:.74rem;color:var(--muted);}
+    .blog-meta span{display:flex;align-items:center;gap:4px;}
+
+    /* Article page */
+    .article-wrap{max-width:720px;padding:56px 0 80px;}
+    .article-wrap h1{font-family:var(--font-display);font-size:clamp(2rem,5vw,3rem);letter-spacing:.02em;line-height:1.1;margin-bottom:16px;}
+    .article-meta{display:flex;align-items:center;gap:16px;font-size:.8rem;color:var(--muted);margin-bottom:36px;flex-wrap:wrap;padding-bottom:24px;border-bottom:1px solid var(--border);}
+    .article-meta .tag{color:var(--amber);font-weight:700;}
+    .article-body h2{font-size:1.3rem;font-weight:700;color:var(--text);margin:36px 0 14px;}
+    .article-body h3{font-size:1.05rem;font-weight:700;color:var(--amber);margin:24px 0 10px;}
+    .article-body p{color:var(--muted);font-size:.95rem;line-height:1.85;margin-bottom:18px;}
+    .article-body ul,.article-body ol{padding-left:22px;margin-bottom:18px;}
+    .article-body li{color:var(--muted);font-size:.95rem;line-height:1.8;margin-bottom:6px;}
+    .article-body strong{color:var(--text);}
+    .article-body a{color:var(--amber);}
+    .article-cta{background:rgba(245,200,66,.07);border:1px solid rgba(245,200,66,.3);border-radius:var(--r);padding:28px;margin:40px 0;text-align:center;}
+    .article-cta h3{font-family:var(--font-display);font-size:1.6rem;letter-spacing:.02em;margin-bottom:8px;}
+    .article-cta p{color:var(--muted);font-size:.88rem;margin-bottom:18px;}
+    .tip-box{background:var(--surface2);border-left:3px solid var(--amber);border-radius:0 8px 8px 0;padding:16px 20px;margin:24px 0;}
+    .tip-box strong{color:var(--amber);font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;display:block;margin-bottom:6px;}
+    .tip-box p{color:var(--muted);font-size:.88rem;line-height:1.7;margin:0;}
+
+    /* Legal */
     .legal-wrap{max-width:700px;padding:56px 0 80px;}
     .legal-wrap h1{font-family:var(--font-display);font-size:2.8rem;letter-spacing:.02em;margin-bottom:6px;}
     .legal-date{font-family:var(--font-mono);font-size:.72rem;color:var(--muted);margin-bottom:40px;}
     .legal-wrap h2{font-size:1rem;font-weight:700;color:var(--amber);margin:28px 0 10px;}
     .legal-wrap p,.legal-wrap li{color:var(--muted);font-size:.88rem;line-height:1.8;margin-bottom:10px;}
     .legal-wrap ul{padding-left:20px;}
+
+    /* Footer */
     footer{background:var(--surface);border-top:1px solid var(--border);padding:48px 20px 28px;}
     .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:36px;max-width:var(--max);margin:0 auto;}
     .footer-brand p{color:var(--muted);font-size:.82rem;margin-top:10px;line-height:1.6;max-width:280px;}
@@ -166,12 +210,14 @@
     .footer-bottom p{font-size:.75rem;color:var(--muted);}
     #toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--surface2);border:1px solid var(--amber);color:var(--text);padding:12px 20px;border-radius:8px;font-size:.82rem;font-weight:600;transition:transform .3s;z-index:999;white-space:nowrap;}
     #toast.show{transform:translateX(-50%) translateY(0);}
+
     @media(max-width:800px){.calc-grid{grid-template-columns:1fr;}.calc-footer{grid-column:span 1;}.footer-grid{grid-template-columns:1fr 1fr;}.footer-brand{grid-column:span 2;}.stats-strip{grid-template-columns:1fr;max-width:260px;}.nav-links{display:none;}}
     @media(max-width:520px){.calc-panel{padding:22px 18px;}.footer-grid{grid-template-columns:1fr;}.footer-brand{grid-column:span 1;}.hero{padding:52px 20px 44px;}}
   </style>
 </head>
 <body>
 
+<!-- NAV -->
 <nav>
   <div class="nav-inner">
     <div class="logo" onclick="go('home')">Utility<span>Calc</span> Hub</div>
@@ -181,14 +227,12 @@
       <a href="#" onclick="go('rpm');return false" data-p="rpm">RPM</a>
       <a href="#" onclick="go('cpm');return false" data-p="cpm">CPM</a>
       <a href="#" onclick="go('youtube');return false" data-p="youtube">YouTube</a>
+      <a href="#" onclick="go('blog');return false" data-p="blog">Blog</a>
       <a href="#" onclick="go('faq');return false" data-p="faq">FAQ</a>
     </div>
     <div class="cur-wrap">
       <button class="cur-btn" onclick="toggleCur(event)" id="curBtn">
-        <span id="curFlag">🇺🇸</span>
-        <span class="sym" id="curSym">$</span>
-        <span id="curCode">USD</span>
-        <span>▾</span>
+        <span id="curFlag">🇺🇸</span><span class="sym" id="curSym">$</span><span id="curCode">USD</span><span>▾</span>
       </button>
       <div class="cur-dropdown" id="curDropdown">
         <div class="cur-head">Select Currency</div>
@@ -199,6 +243,7 @@
   </div>
 </nav>
 
+<!-- ═══════ HOME ═══════ -->
 <div id="page-home" class="page active">
   <section class="hero">
     <div class="eyebrow">Free Monetisation Tools · 15 Currencies</div>
@@ -206,7 +251,7 @@
     <p class="hero-sub">Plug in your pageviews, CPC, and CTR to instantly see how much your website could earn from AdSense — no sign-up, no fluff.</p>
     <div class="cta-row">
       <button class="btn-primary" onclick="go('adsense')">⚡ Launch Calculator</button>
-      <button class="btn-ghost" onclick="go('faq')">How it works</button>
+      <button class="btn-ghost" onclick="go('blog')">Read the Blog</button>
     </div>
     <div class="stats-strip">
       <div class="stat-item"><div class="stat-num">5+</div><div class="stat-label">Free Calculators</div></div>
@@ -257,7 +302,7 @@
         <div class="calc-card" onclick="go('rpm')"><div class="card-icon">📈</div><div class="card-title">RPM Calculator</div><div class="card-desc">Revenue per 1,000 pageviews.</div><div class="card-link">Try it →</div></div>
         <div class="calc-card" onclick="go('cpm')"><div class="card-icon">💰</div><div class="card-title">CPM Calculator</div><div class="card-desc">Cost per 1,000 ad impressions.</div><div class="card-link">Try it →</div></div>
         <div class="calc-card" onclick="go('youtube')"><div class="card-icon">▶️</div><div class="card-title">YouTube Earnings</div><div class="card-desc">Estimate YouTube ad revenue from views and CPM.</div><div class="card-link">Try it →</div></div>
-        <div class="calc-card" onclick="go('adsense')"><div class="card-icon">🎯</div><div class="card-title">Break-Even Traffic</div><div class="card-desc">Pageviews needed to hit your monthly income target.</div><div class="card-link">Try it →</div></div>
+        <div class="calc-card" onclick="go('blog')"><div class="card-icon">📝</div><div class="card-title">Monetisation Blog</div><div class="card-desc">Guides to growing your ad revenue and website traffic.</div><div class="card-link">Read now →</div></div>
       </div>
     </div>
   </section>
@@ -282,6 +327,7 @@
   </section>
 </div>
 
+<!-- ═══════ ADSENSE CALC ═══════ -->
 <div id="page-adsense" class="page">
   <section class="tool-page">
     <div class="container">
@@ -323,125 +369,470 @@
   </section>
 </div>
 
+<!-- ═══════ RPM ═══════ -->
 <div id="page-rpm" class="page">
-  <section class="tool-page">
-    <div class="container">
-      <button class="back-btn" onclick="go('home')">← Back</button>
-      <div class="sec-tag">Tool</div>
-      <div class="sec-h">RPM Calculator</div>
-      <p class="sec-sub">Revenue Per Mille — how much you earn per 1,000 pageviews.</p>
-      <div id="rRateBadge"></div>
-      <div class="simple-card">
-        <div class="field"><label>Total Earnings <span class="hint" id="r_earn_hint">in USD</span></label><div class="input-wrap"><span class="input-prefix amber" id="r_earn_sym">$</span><input type="number" class="money-input" id="r_earn" value="350" min="0" step="0.01" oninput="calcRPM()"/></div></div>
-        <div class="field"><label>Total Pageviews</label><div class="input-wrap"><span class="input-prefix">#</span><input type="number" id="r_pv" value="100000" min="1" oninput="calcRPM()"/></div></div>
-        <div class="result-item hl" style="margin-top:20px"><div><div class="result-label">Page RPM</div></div><div class="result-val" id="r_rpm">—</div></div>
-        <div class="result-item"><div><div class="result-label">Assessment</div></div><div class="result-val" id="r_assess" style="font-size:.85rem">—</div></div>
-        <div style="background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:14px 16px;margin-top:12px;font-size:.78rem;color:var(--muted);line-height:1.8">
-          <strong style="color:var(--text)">RPM Benchmarks (USD):</strong><br/>
-          &lt;$1 Very low · $1–3 Below avg · $3–8 Average · $8–20 Good · $20+ Excellent
-        </div>
-      </div>
+  <section class="tool-page"><div class="container">
+    <button class="back-btn" onclick="go('home')">← Back</button>
+    <div class="sec-tag">Tool</div><div class="sec-h">RPM Calculator</div>
+    <p class="sec-sub">Revenue Per Mille — how much you earn per 1,000 pageviews.</p>
+    <div id="rRateBadge"></div>
+    <div class="simple-card">
+      <div class="field"><label>Total Earnings <span class="hint" id="r_earn_hint">in USD</span></label><div class="input-wrap"><span class="input-prefix amber" id="r_earn_sym">$</span><input type="number" class="money-input" id="r_earn" value="350" min="0" step="0.01" oninput="calcRPM()"/></div></div>
+      <div class="field"><label>Total Pageviews</label><div class="input-wrap"><span class="input-prefix">#</span><input type="number" id="r_pv" value="100000" min="1" oninput="calcRPM()"/></div></div>
+      <div class="result-item hl" style="margin-top:20px"><div><div class="result-label">Page RPM</div></div><div class="result-val" id="r_rpm">—</div></div>
+      <div class="result-item"><div><div class="result-label">Assessment</div></div><div class="result-val" id="r_assess" style="font-size:.85rem">—</div></div>
+      <div style="background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:14px 16px;margin-top:12px;font-size:.78rem;color:var(--muted);line-height:1.8"><strong style="color:var(--text)">RPM Benchmarks (USD):</strong><br/>&lt;$1 Very low · $1–3 Below avg · $3–8 Average · $8–20 Good · $20+ Excellent</div>
     </div>
-  </section>
+  </div></section>
 </div>
 
+<!-- ═══════ CPM ═══════ -->
 <div id="page-cpm" class="page">
-  <section class="tool-page">
-    <div class="container">
-      <button class="back-btn" onclick="go('home')">← Back</button>
-      <div class="sec-tag">Tool</div>
-      <div class="sec-h">CPM Calculator</div>
-      <p class="sec-sub">Cost Per Mille — cost per 1,000 ad impressions.</p>
-      <div id="cRateBadge"></div>
-      <div class="simple-card">
-        <div class="field"><label>Total Ad Spend <span class="hint" id="c_spend_hint">in USD</span></label><div class="input-wrap"><span class="input-prefix amber" id="c_spend_sym">$</span><input type="number" class="money-input" id="c_spend" value="500" min="0" step="0.01" oninput="calcCPM()"/></div></div>
-        <div class="field"><label>Total Impressions</label><div class="input-wrap"><span class="input-prefix">#</span><input type="number" id="c_imp" value="200000" min="1" oninput="calcCPM()"/></div></div>
-        <hr class="divider"/>
-        <div class="field"><label>Known CPM <span class="hint">optional — reverse calc</span></label><div class="input-wrap"><span class="input-prefix amber" id="c_cpm_sym">$</span><input type="number" class="money-input" id="c_known" value="0" min="0" step="0.01" oninput="calcCPM()"/></div></div>
-        <div class="result-item hl"><div><div class="result-label">CPM</div><div class="result-sub">cost per 1,000 impressions</div></div><div class="result-val" id="c_cpm">—</div></div>
-        <div class="result-item bl" id="c_imp_row" style="display:none"><div><div class="result-label">Impressions from Known CPM</div></div><div class="result-val" id="c_imp_res">—</div></div>
-      </div>
+  <section class="tool-page"><div class="container">
+    <button class="back-btn" onclick="go('home')">← Back</button>
+    <div class="sec-tag">Tool</div><div class="sec-h">CPM Calculator</div>
+    <p class="sec-sub">Cost Per Mille — cost per 1,000 ad impressions.</p>
+    <div id="cRateBadge"></div>
+    <div class="simple-card">
+      <div class="field"><label>Total Ad Spend <span class="hint" id="c_spend_hint">in USD</span></label><div class="input-wrap"><span class="input-prefix amber" id="c_spend_sym">$</span><input type="number" class="money-input" id="c_spend" value="500" min="0" step="0.01" oninput="calcCPM()"/></div></div>
+      <div class="field"><label>Total Impressions</label><div class="input-wrap"><span class="input-prefix">#</span><input type="number" id="c_imp" value="200000" min="1" oninput="calcCPM()"/></div></div>
+      <hr class="divider"/>
+      <div class="field"><label>Known CPM <span class="hint">optional — reverse calc</span></label><div class="input-wrap"><span class="input-prefix amber" id="c_cpm_sym">$</span><input type="number" class="money-input" id="c_known" value="0" min="0" step="0.01" oninput="calcCPM()"/></div></div>
+      <div class="result-item hl"><div><div class="result-label">CPM</div><div class="result-sub">cost per 1,000 impressions</div></div><div class="result-val" id="c_cpm">—</div></div>
+      <div class="result-item bl" id="c_imp_row" style="display:none"><div><div class="result-label">Impressions from Known CPM</div></div><div class="result-val" id="c_imp_res">—</div></div>
     </div>
-  </section>
+  </div></section>
 </div>
 
+<!-- ═══════ YOUTUBE ═══════ -->
 <div id="page-youtube" class="page">
+  <section class="tool-page"><div class="container">
+    <button class="back-btn" onclick="go('home')">← Back</button>
+    <div class="sec-tag">Tool</div><div class="sec-h">YouTube Earnings Estimator</div>
+    <p class="sec-sub">Estimates monthly YouTube ad revenue. Assumes 55% creator revenue share.</p>
+    <div id="yRateBadge"></div>
+    <div class="simple-card">
+      <div class="field"><label>Monthly Views</label><div class="input-wrap"><span class="input-prefix">#</span><input type="number" id="y_views" value="500000" min="0" oninput="calcYT()"/></div></div>
+      <div class="field"><label>CPM <span class="hint" id="y_cpm_hint">advertiser rate / 1k views · USD</span></label><div class="input-wrap"><span class="input-prefix amber" id="y_cpm_sym">$</span><input type="number" class="money-input" id="y_cpm" value="4.00" min="0.01" step="0.01" oninput="calcYT()"/></div></div>
+      <div class="field"><label>Monetised Playback Rate</label><div class="slider-wrap"><input type="range" id="y_rate_r" min="1" max="100" step="1" value="65" oninput="syncYT()"/><span class="slider-val" id="y_rate_lbl">65%</span></div></div>
+      <div class="result-item"><div><div class="result-label">Monetised Views</div></div><div class="result-val" id="y_mv">—</div></div>
+      <div class="result-item hl"><div><div class="result-label">Monthly Revenue</div><div class="result-sub">after 55% creator share</div></div><div class="result-val" id="y_monthly">—</div></div>
+      <div class="result-item hl"><div><div class="result-label">Annual Revenue</div></div><div class="result-val" id="y_annual">—</div></div>
+      <div class="result-item"><div><div class="result-label">Your RPM</div><div class="result-sub">creator revenue per 1k views</div></div><div class="result-val" id="y_rpm">—</div></div>
+    </div>
+  </div></section>
+</div>
+
+<!-- ═══════ BLOG LISTING ═══════ -->
+<div id="page-blog" class="page">
   <section class="tool-page">
     <div class="container">
-      <button class="back-btn" onclick="go('home')">← Back</button>
-      <div class="sec-tag">Tool</div>
-      <div class="sec-h">YouTube Earnings Estimator</div>
-      <p class="sec-sub">Estimates monthly YouTube ad revenue. Assumes 55% creator revenue share.</p>
-      <div id="yRateBadge"></div>
-      <div class="simple-card">
-        <div class="field"><label>Monthly Views</label><div class="input-wrap"><span class="input-prefix">#</span><input type="number" id="y_views" value="500000" min="0" oninput="calcYT()"/></div></div>
-        <div class="field"><label>CPM <span class="hint" id="y_cpm_hint">advertiser rate / 1k views · USD</span></label><div class="input-wrap"><span class="input-prefix amber" id="y_cpm_sym">$</span><input type="number" class="money-input" id="y_cpm" value="4.00" min="0.01" step="0.01" oninput="calcYT()"/></div></div>
-        <div class="field">
-          <label>Monetised Playback Rate</label>
-          <div class="slider-wrap"><input type="range" id="y_rate_r" min="1" max="100" step="1" value="65" oninput="syncYT()"/><span class="slider-val" id="y_rate_lbl">65%</span></div>
+      <div class="sec-tag">Monetisation Guides</div>
+      <div class="sec-h">The Blog</div>
+      <p class="sec-sub">Practical guides to help you grow your website income — whether you are just starting out or looking to scale.</p>
+      <div class="blog-grid">
+        <div class="blog-card" onclick="go('article1')">
+          <div class="blog-card-body">
+            <span class="blog-tag">AdSense Tips</span>
+            <div class="blog-card-title">How to Increase Your AdSense CPC and Earn More Per Click</div>
+            <div class="blog-card-excerpt">Your CPC is one of the biggest levers you have over your AdSense income. Here is exactly how to move it in the right direction.</div>
+            <div class="blog-meta"><span>📅 April 2025</span><span>⏱ 6 min read</span></div>
+          </div>
         </div>
-        <div class="result-item"><div><div class="result-label">Monetised Views</div></div><div class="result-val" id="y_mv">—</div></div>
-        <div class="result-item hl"><div><div class="result-label">Monthly Revenue</div><div class="result-sub">after 55% creator share</div></div><div class="result-val" id="y_monthly">—</div></div>
-        <div class="result-item hl"><div><div class="result-label">Annual Revenue</div></div><div class="result-val" id="y_annual">—</div></div>
-        <div class="result-item"><div><div class="result-label">Your RPM</div><div class="result-sub">creator revenue per 1k views</div></div><div class="result-val" id="y_rpm">—</div></div>
+        <div class="blog-card" onclick="go('article2')">
+          <div class="blog-card-body">
+            <span class="blog-tag">RPM &amp; Revenue</span>
+            <div class="blog-card-title">What is a Good RPM for Your Website Niche?</div>
+            <div class="blog-card-excerpt">RPM varies enormously across niches. Find out where your site should be and how to close the gap if you are falling short.</div>
+            <div class="blog-meta"><span>📅 April 2025</span><span>⏱ 5 min read</span></div>
+          </div>
+        </div>
+        <div class="blog-card" onclick="go('article3')">
+          <div class="blog-card-body">
+            <span class="blog-tag">Traffic Growth</span>
+            <div class="blog-card-title">How to Grow Your Website to 10,000 Pageviews a Month</div>
+            <div class="blog-card-excerpt">10,000 monthly pageviews is the milestone where ad revenue starts to feel real. Here is a realistic roadmap to get there.</div>
+            <div class="blog-meta"><span>📅 April 2025</span><span>⏱ 7 min read</span></div>
+          </div>
+        </div>
+        <div class="blog-card" onclick="go('article4')">
+          <div class="blog-card-body">
+            <span class="blog-tag">Ad Networks</span>
+            <div class="blog-card-title">AdSense vs Ezoic: Which is Better for Beginners?</div>
+            <div class="blog-card-excerpt">Both platforms promise better revenue. But which one should you actually use when you are starting out? We break it down clearly.</div>
+            <div class="blog-meta"><span>📅 April 2025</span><span>⏱ 6 min read</span></div>
+          </div>
+        </div>
+        <div class="blog-card" onclick="go('article5')">
+          <div class="blog-card-body">
+            <span class="blog-tag">Planning</span>
+            <div class="blog-card-title">How to Calculate Your Website's Earning Potential</div>
+            <div class="blog-card-excerpt">Before you invest time building content, it is worth running the numbers. Here is how to estimate what your site could realistically earn.</div>
+            <div class="blog-meta"><span>📅 April 2025</span><span>⏱ 5 min read</span></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 </div>
 
-<div id="page-faq" class="page">
-  <section class="tool-page">
-    <div class="container">
-      <button class="back-btn" onclick="go('home')">← Back</button>
-      <div class="sec-tag">FAQ</div>
-      <div class="sec-h">Frequently Asked Questions</div>
-      <p class="sec-sub">Everything you need to know about AdSense revenue and how these calculators work.</p>
-      <div id="fullFaq" style="max-width:700px"></div>
+<!-- ═══════ ARTICLE 1 ═══════ -->
+<div id="page-article1" class="page">
+  <section class="tool-page"><div class="container">
+    <button class="back-btn" onclick="go('blog')">← Back to Blog</button>
+    <div class="article-wrap">
+      <span class="blog-tag">AdSense Tips</span>
+      <h1>How to Increase Your AdSense CPC and Earn More Per Click</h1>
+      <div class="article-meta">
+        <span class="tag">UtilityCalc Hub</span>
+        <span>📅 April 2025</span>
+        <span>⏱ 6 min read</span>
+      </div>
+      <div class="article-body">
+        <p>If you have been running Google AdSense for a while, you have probably noticed that not every click is worth the same amount. Some days a handful of clicks generate a decent return, while other days hundreds of clicks barely move the needle. The difference almost always comes down to your CPC — your cost per click — and understanding what drives it is one of the most valuable things you can do for your website income.</p>
+
+        <p>CPC is the amount an advertiser pays when someone clicks one of their ads on your site. Google takes a cut — roughly 32% — and passes the rest to you. The amount advertisers are willing to pay varies enormously depending on what they are selling, who they are targeting, and how competitive their market is. Your job as a publisher is to create the conditions that attract higher-paying advertisers.</p>
+
+        <h2>Why Your CPC is Low (and What to Do About It)</h2>
+        <p>There are several common reasons why publishers find themselves stuck with a low CPC. The good news is that most of them are fixable.</p>
+
+        <h3>1. Your niche attracts low-value advertisers</h3>
+        <p>This is the single biggest factor in your CPC. A website about personal finance, insurance, legal services, or software will consistently command far higher CPCs than a general entertainment or lifestyle blog. Advertisers in competitive industries pay more because the lifetime value of a customer is higher. If you are in a low-CPC niche, consider whether you can pivot your content towards more commercially valuable topics — even within the same broad subject area.</p>
+
+        <div class="tip-box"><strong>Pro Tip</strong><p>Use Google's Keyword Planner (free with a Google account) to look up the suggested bid for keywords related to your content. This gives you a reliable indicator of how much advertisers are willing to pay in your niche.</p></div>
+
+        <h3>2. Your traffic is coming from low-CPC countries</h3>
+        <p>Geography plays a huge role in CPC. Traffic from the United States, United Kingdom, Canada, and Australia typically commands CPCs several times higher than traffic from developing markets. This is not something to feel bad about — it is simply how the advertising auction works. If you want to improve this, focus your SEO strategy on keywords and topics that resonate with audiences in higher-value countries.</p>
+
+        <h3>3. Your ad placement is attracting the wrong ad types</h3>
+        <p>Where you place your ads affects what type of ads appear, which in turn affects your CPC. Ads placed within long-form content — particularly within the body of an article — tend to attract higher-intent clicks than ads placed in sidebars or headers. Experiment with in-content ad placements and see if your CPC improves.</p>
+
+        <h3>4. You are using too many ad units</h3>
+        <p>More ads does not always mean more money. When you have a large number of ad units on a page, Google fills the less prominent ones with lower-paying ads. A more focused layout with fewer, better-positioned units can actually increase your average CPC by ensuring only the best-paying inventory appears.</p>
+
+        <h2>Content Strategies That Attract Higher CPCs</h2>
+        <p>The most reliable way to improve your CPC over the long term is to create content that attracts high-value commercial searches. These are the kinds of searches people make when they are close to making a purchase or decision — sometimes called "bottom of funnel" content.</p>
+
+        <ul>
+          <li><strong>Product reviews and comparisons</strong> — "best X for Y" articles attract advertisers who sell products in that category</li>
+          <li><strong>Financial guides</strong> — articles about saving, investing, insurance, or loans attract premium financial advertisers</li>
+          <li><strong>Software tutorials</strong> — guides about specific tools or software attract B2B advertisers who pay high CPCs</li>
+          <li><strong>How-to guides with buying intent</strong> — articles that help people decide what to buy attract advertisers competing for that customer</li>
+        </ul>
+
+        <h2>Technical Tweaks That Can Help</h2>
+        <p>Beyond content and placement, there are a few technical things worth checking. Make sure your site loads quickly — slow sites have lower engagement, which signals to Google that your inventory is less valuable. Also ensure your site is fully mobile-optimised, as mobile traffic now represents the majority of web visits for most publishers.</p>
+
+        <p>You can also experiment with AdSense's Auto Ads feature, which uses machine learning to identify the best placement and format for ads on your pages. Some publishers find this increases both CTR and CPC without any manual effort.</p>
+
+        <h2>Be Patient — CPC Improves Over Time</h2>
+        <p>Google's algorithm takes time to learn what kind of advertisers are a good fit for your site. New sites and new content often start with lower CPCs as the system figures out what your audience looks like. As you build more traffic and more consistent content, your CPC should naturally improve. The strategies above simply help speed that process along.</p>
+
+        <div class="article-cta">
+          <h3>See What Your CPC Could Earn</h3>
+          <p>Use our free AdSense calculator to model different CPC scenarios and see the impact on your monthly revenue.</p>
+          <button class="btn-primary" onclick="go('adsense')">Launch Calculator →</button>
+        </div>
+      </div>
     </div>
-  </section>
+  </div></section>
 </div>
 
-<div id="page-terms" class="page">
-  <div class="container"><div class="legal-wrap">
+<!-- ═══════ ARTICLE 2 ═══════ -->
+<div id="page-article2" class="page">
+  <section class="tool-page"><div class="container">
+    <button class="back-btn" onclick="go('blog')">← Back to Blog</button>
+    <div class="article-wrap">
+      <span class="blog-tag">RPM &amp; Revenue</span>
+      <h1>What is a Good RPM for Your Website Niche?</h1>
+      <div class="article-meta">
+        <span class="tag">UtilityCalc Hub</span>
+        <span>📅 April 2025</span>
+        <span>⏱ 5 min read</span>
+      </div>
+      <div class="article-body">
+        <p>Page RPM — Revenue Per Mille — is one of the most useful metrics for understanding how well your website is monetising its traffic. Unlike raw earnings, RPM tells you how much you are making per 1,000 pageviews, which makes it easy to compare performance over time and benchmark yourself against other publishers in your space.</p>
+
+        <p>The formula is straightforward: RPM = (Total Earnings / Total Pageviews) × 1,000. So if you earned $50 from 10,000 pageviews, your RPM is $5. Simple — but the number hides a lot of nuance, because what counts as "good" varies enormously depending on your niche, your traffic geography, and the time of year.</p>
+
+        <h2>RPM Benchmarks by Niche</h2>
+        <p>Here is a rough guide to typical RPM ranges across the most common website categories. These figures assume primarily US or UK traffic and standard AdSense monetisation.</p>
+
+        <ul>
+          <li><strong>Personal Finance and Insurance</strong> — $15 to $50+ RPM. The highest-earning niche for most publishers, driven by expensive financial products and highly competitive advertising auctions.</li>
+          <li><strong>Legal and Professional Services</strong> — $12 to $40 RPM. Similar to finance — advertisers in this space pay a premium because a single converted customer can be worth thousands.</li>
+          <li><strong>Technology and Software</strong> — $8 to $25 RPM. Particularly strong for B2B-oriented content, reviews of paid tools, or tutorials for professional software.</li>
+          <li><strong>Health and Wellness</strong> — $6 to $20 RPM. Varies widely depending on whether you are covering general wellbeing or specific medical topics.</li>
+          <li><strong>Home and Garden</strong> — $5 to $15 RPM. Product-focused content (reviews, buying guides) performs better than general lifestyle content.</li>
+          <li><strong>Food and Recipes</strong> — $3 to $8 RPM. One of the most competitive niches for traffic but lower RPM due to less commercially motivated audiences.</li>
+          <li><strong>Entertainment and Pop Culture</strong> — $1 to $5 RPM. High traffic potential but lower advertiser demand.</li>
+          <li><strong>News and Current Events</strong> — $1 to $4 RPM. Highly variable and often lower due to brand-unsafe concerns from advertisers.</li>
+        </ul>
+
+        <div class="tip-box"><strong>Remember</strong><p>These are averages. Your actual RPM will depend heavily on the quality of your traffic, how engaged your readers are, and how well your ads are placed. A well-optimised food blog can outperform a poorly-optimised finance site.</p></div>
+
+        <h2>Why RPM Fluctuates Throughout the Year</h2>
+        <p>Even if you do everything right, your RPM will naturally rise and fall throughout the year. This is completely normal and driven by advertiser spending patterns. The biggest RPM spike of the year typically happens in Q4 — October through December — as advertisers compete aggressively for consumer attention in the lead-up to Christmas. January and February tend to be the lowest RPM months for most publishers, as advertising budgets reset and demand drops off sharply.</p>
+
+        <p>Understanding this cycle helps you avoid panic when your January RPM looks disappointing compared to December. Plan your finances accordingly — the Q4 windfall should carry you through the leaner early months.</p>
+
+        <h2>How to Improve Your RPM</h2>
+        <p>If your RPM is consistently below the benchmarks for your niche, there are several things worth investigating.</p>
+
+        <p><strong>Check your traffic geography.</strong> A site with strong US traffic will almost always have a higher RPM than the same site drawing most of its visitors from regions where advertisers pay less. Use Google Analytics to review where your readers are coming from, and consider targeting US or UK search terms more deliberately in your content.</p>
+
+        <p><strong>Review your ad placement.</strong> Ads that are seen and clicked generate revenue. Ads that are buried below the fold or hidden in low-traffic areas of your layout do not. Make sure your best ad slots are visible without scrolling, particularly on mobile devices.</p>
+
+        <p><strong>Improve page engagement.</strong> Google rewards content that keeps readers on the page. Longer time-on-page signals to advertisers that your audience is engaged and attentive, which can attract better-quality ads and higher CPCs.</p>
+
+        <p><strong>Consider premium ad networks.</strong> Once you reach meaningful traffic levels — typically 50,000 sessions per month or more — premium networks like Mediavine or AdThrive can significantly improve your RPM compared to AdSense alone. These networks negotiate directly with advertisers and typically achieve much higher fill rates and CPMs.</p>
+
+        <h2>The Bottom Line</h2>
+        <p>A "good" RPM is ultimately one that is trending upward over time. If you are consistently improving your content quality, building traffic from the right geographies, and optimising your ad layout, your RPM will follow. Use the benchmarks above as a reference point, not a ceiling.</p>
+
+        <div class="article-cta">
+          <h3>Calculate Your RPM</h3>
+          <p>Enter your earnings and pageviews into our free RPM calculator to see exactly where you stand.</p>
+          <button class="btn-primary" onclick="go('rpm')">RPM Calculator →</button>
+        </div>
+      </div>
+    </div>
+  </div></section>
+</div>
+
+<!-- ═══════ ARTICLE 3 ═══════ -->
+<div id="page-article3" class="page">
+  <section class="tool-page"><div class="container">
+    <button class="back-btn" onclick="go('blog')">← Back to Blog</button>
+    <div class="article-wrap">
+      <span class="blog-tag">Traffic Growth</span>
+      <h1>How to Grow Your Website to 10,000 Pageviews a Month</h1>
+      <div class="article-meta">
+        <span class="tag">UtilityCalc Hub</span>
+        <span>📅 April 2025</span>
+        <span>⏱ 7 min read</span>
+      </div>
+      <div class="article-body">
+        <p>Ten thousand pageviews a month. It sounds like a lot when you are starting from zero, but it is genuinely achievable within six to twelve months if you approach it with a clear strategy. At this level, AdSense revenue starts to feel real — depending on your niche, you could be earning anywhere from $30 to $200 per month — and more importantly, the SEO foundation you build to reach this milestone will carry you well beyond it.</p>
+
+        <p>This guide is for people who are either just getting started or stuck somewhere under the 5,000 monthly pageview mark. We will cover exactly what to focus on, what to ignore, and how to compound your early gains into sustained growth.</p>
+
+        <h2>Step 1: Pick a Focused Niche and Stick to It</h2>
+        <p>The biggest mistake new website owners make is trying to cover too many topics at once. Google's algorithm rewards topical authority — the idea that your site is a reliable, comprehensive resource on a specific subject. A site that covers twenty different topics signals confusion. A site that covers one topic deeply signals expertise.</p>
+
+        <p>Your niche does not need to be tiny. "Personal finance for UK millennials" is a niche. "Home cooking on a budget" is a niche. "Freelance graphic design" is a niche. What matters is that the topic is specific enough that you can write twenty or thirty genuinely useful articles without running out of ideas or audience.</p>
+
+        <div class="tip-box"><strong>How to Choose</strong><p>Pick something you know well enough to write about without constant research, that has a clear audience with real questions to answer, and that has some commercial interest (so that advertisers will eventually want to reach your readers).</p></div>
+
+        <h2>Step 2: Build a Content Plan Around Real Search Queries</h2>
+        <p>Traffic from search engines is the most reliable and scalable source for most websites. To earn it, you need to write content that answers the questions people are actually typing into Google. This is called keyword research, and it does not need to be complicated.</p>
+
+        <p>Start with free tools. Google's own search bar is surprisingly useful — type your topic and look at the autocomplete suggestions and the "People also ask" box on the results page. These tell you exactly what people want to know. Google Search Console (free) shows you what queries are already bringing people to your site.</p>
+
+        <p>When starting out, focus on long-tail keywords — longer, more specific phrases with lower search volume. These are far easier to rank for than broad terms, and the people searching them are often more engaged and more likely to take action. "How to make sourdough bread at home for beginners" will bring you more consistent traffic than "sourdough bread" ever will, at least early on.</p>
+
+        <h2>Step 3: Write Content That Actually Deserves to Rank</h2>
+        <p>Publishing content is not enough on its own. The content has to be genuinely good — more helpful, more thorough, and more trustworthy than whatever is already on the first page of Google for that query. This is a higher bar than it sounds, because there is already a lot of decent content out there.</p>
+
+        <p>What makes content rank well in practice comes down to a few things: it answers the question directly and completely, it is easy to read (short paragraphs, clear headings, no unnecessary filler), it demonstrates real knowledge or experience, and it loads fast on mobile. None of these require technical expertise — they just require effort and genuine care about being useful to your reader.</p>
+
+        <p>Aim to publish at least one solid article per week. Consistency matters more than volume. Six quality articles a month will outperform twenty thin ones every time.</p>
+
+        <h2>Step 4: Build Internal Links Between Your Articles</h2>
+        <p>Once you have ten or more articles published, start linking them to each other. When you write a new article, look for opportunities to mention and link to your older content — and go back to older articles to link forward to newer ones. This is called internal linking, and it does two important things: it helps Google discover and understand the structure of your site, and it keeps readers on your site longer by giving them more useful content to explore.</p>
+
+        <h2>Step 5: Get Your First External Links</h2>
+        <p>Links from other websites to yours — called backlinks — are one of the most important signals Google uses to decide how much to trust your content. Without any backlinks, even excellent content can struggle to rank. Getting your first few links does not require anything complicated.</p>
+
+        <ul>
+          <li>Share your articles in relevant online communities — Reddit, Facebook groups, Quora — but only where they are genuinely useful to the discussion</li>
+          <li>Reach out to other bloggers in your niche and offer to write a guest post</li>
+          <li>Create a genuinely useful free resource — a checklist, template, or tool — that people in your niche will want to share</li>
+          <li>Answer questions on forums and link to your article where it is relevant and helpful</li>
+        </ul>
+
+        <h2>What to Expect and When</h2>
+        <p>Growth rarely feels linear. The first three months are often the hardest, because Google takes time to trust a new site. You might publish ten articles and see almost no traffic. This is normal. Months four through six typically bring the first signs of consistent organic traffic as your content starts to rank. By month nine or twelve, if you have been consistent, 10,000 monthly pageviews is a realistic target for most niches.</p>
+
+        <p>The most important thing you can do during this period is keep publishing and resist the urge to second-guess your niche every month. Consistency and patience are the actual secret to growing a website.</p>
+
+        <div class="article-cta">
+          <h3>See What 10,000 Pageviews Could Earn</h3>
+          <p>Use our AdSense calculator to model your potential monthly revenue at different traffic levels.</p>
+          <button class="btn-primary" onclick="go('adsense')">Calculate Now →</button>
+        </div>
+      </div>
+    </div>
+  </div></section>
+</div>
+
+<!-- ═══════ ARTICLE 4 ═══════ -->
+<div id="page-article4" class="page">
+  <section class="tool-page"><div class="container">
+    <button class="back-btn" onclick="go('blog')">← Back to Blog</button>
+    <div class="article-wrap">
+      <span class="blog-tag">Ad Networks</span>
+      <h1>AdSense vs Ezoic: Which is Better for Beginners?</h1>
+      <div class="article-meta">
+        <span class="tag">UtilityCalc Hub</span>
+        <span>📅 April 2025</span>
+        <span>⏱ 6 min read</span>
+      </div>
+      <div class="article-body">
+        <p>When you are starting to monetise a website, Google AdSense is usually the first name you come across. It is the most well-known ad network in the world, and for good reason — it is straightforward to set up, backed by Google's enormous advertiser base, and works for sites of virtually any size. But it is not the only option, and for many publishers, it is not the best one.</p>
+
+        <p>Ezoic has emerged as one of the most popular alternatives, particularly for small and medium-sized publishers who want better revenue without the complex requirements of premium networks like Mediavine or AdThrive. So how do the two compare, and which should you choose?</p>
+
+        <h2>Google AdSense: The Familiar Starting Point</h2>
+        <p>AdSense is Google's publisher monetisation platform, and it has been around since 2003. It works by displaying ads on your site and paying you a share of what advertisers bid to reach your audience. The signup process is free, the setup is relatively simple, and approval — while not guaranteed — is achievable for most legitimate sites with original content.</p>
+
+        <p><strong>The advantages of AdSense</strong> are its simplicity, reliability, and the sheer scale of Google's advertiser network. Because so many advertisers use Google's platforms, the competition for your ad space is high, which generally keeps CPCs reasonable. Payments are reliable and well-established, and the reporting tools are solid.</p>
+
+        <p><strong>The limitations</strong> are mainly around revenue optimisation. AdSense gives you relatively limited control over which ads appear and how they are positioned. The platform's revenue share — around 68% to you, 32% to Google — is decent but not exceptional. And if your site is in a lower-CPC niche or draws a lot of traffic from developing markets, AdSense earnings can feel disappointing relative to your traffic.</p>
+
+        <h2>Ezoic: The AI-Optimised Alternative</h2>
+        <p>Ezoic is a technology platform that uses machine learning to test different combinations of ad placements, sizes, and types to find what generates the highest revenue for your specific site and audience. Unlike AdSense, which simply fills the slots you designate, Ezoic actively experiments with your layout to improve performance over time.</p>
+
+        <p><strong>The advantages of Ezoic</strong> are primarily around revenue. Most publishers who switch from AdSense to Ezoic report a meaningful increase in earnings — often in the range of 50% to 200% more — although results vary widely depending on the site. Ezoic also provides access to Google Ad Exchange (AdX) inventory, which typically pays higher CPMs than standard AdSense. The platform has no strict minimum traffic requirement, making it accessible to new publishers.</p>
+
+        <p><strong>The limitations</strong> of Ezoic are complexity and speed. The platform requires more setup time than AdSense, including changing your nameservers to route traffic through Ezoic's infrastructure. This can feel daunting for beginners. There have also been reports of Ezoic's ad injection slowing page load times, which matters both for user experience and SEO. The free tier of Ezoic now includes a small revenue share fee, so it is worth reading the current pricing carefully before signing up.</p>
+
+        <div class="tip-box"><strong>Key Difference</strong><p>AdSense is a straightforward ad network. Ezoic is an optimisation platform that sits on top of multiple ad networks including AdSense. The additional complexity comes with the potential for higher revenue — but it requires more involvement from you, at least at the start.</p></div>
+
+        <h2>Which Should You Choose?</h2>
+        <p>If you are brand new to website monetisation and your site has fewer than 5,000 monthly pageviews, start with AdSense. It is simpler, it will teach you the basics of how ad revenue works, and it will help you build the traffic history and content quality that other networks look for.</p>
+
+        <p>If you have been running AdSense for a while and feel like your revenue is not reflecting the quality of your traffic, it is worth testing Ezoic. The potential upside is real, and the platform is designed to be accessible to smaller publishers. Just be prepared to invest some time in the setup and give the machine learning system at least four to six weeks to optimise properly before drawing conclusions.</p>
+
+        <p>If you reach 50,000 monthly sessions, start looking at Mediavine (which requires 50,000 sessions per month) or AdThrive (100,000 monthly pageviews). These premium networks typically deliver significantly higher RPMs than either AdSense or Ezoic, and the stricter entry requirements exist because they negotiate premium rates with advertisers on behalf of their publishers.</p>
+
+        <h2>The Honest Answer</h2>
+        <p>There is no single right answer. The best ad network for your site depends on your traffic volume, your niche, how much time you want to spend on optimisation, and your tolerance for technical complexity. What is almost always true is that any monetisation is better than none, and starting with AdSense while you build your traffic is a sensible approach for most beginners.</p>
+
+        <div class="article-cta">
+          <h3>Compare Your Potential Earnings</h3>
+          <p>Model different CPC and RPM scenarios with our free calculator to see which network setup could work best for your site.</p>
+          <button class="btn-primary" onclick="go('adsense')">Launch Calculator →</button>
+        </div>
+      </div>
+    </div>
+  </div></section>
+</div>
+
+<!-- ═══════ ARTICLE 5 ═══════ -->
+<div id="page-article5" class="page">
+  <section class="tool-page"><div class="container">
+    <button class="back-btn" onclick="go('blog')">← Back to Blog</button>
+    <div class="article-wrap">
+      <span class="blog-tag">Planning</span>
+      <h1>How to Calculate Your Website's Earning Potential</h1>
+      <div class="article-meta">
+        <span class="tag">UtilityCalc Hub</span>
+        <span>📅 April 2025</span>
+        <span>⏱ 5 min read</span>
+      </div>
+      <div class="article-body">
+        <p>One of the most common questions new website owners ask is: "How much could my site actually earn?" It is a reasonable thing to want to know before you invest significant time and effort into building content. The honest answer is that it depends on a handful of variables — but those variables are knowable, and running the numbers before you start is far better than guessing.</p>
+
+        <p>This guide walks you through how to estimate your site's earning potential using real figures, so you can set realistic expectations and make smarter decisions about where to focus your energy.</p>
+
+        <h2>The Core Formula</h2>
+        <p>All ad revenue on a content website comes down to one equation:</p>
+
+        <p><strong>Monthly Revenue = Monthly Pageviews × Ads per Page × CTR × CPC</strong></p>
+
+        <p>Each of these variables is within your influence to some degree, which is what makes the calculation useful as a planning tool. Let us break each one down and look at realistic ranges.</p>
+
+        <h3>Monthly Pageviews</h3>
+        <p>This is the total number of times pages on your site are viewed each month. A brand new site might have a few hundred. A well-established niche site with consistent content and decent SEO might have 50,000 to 100,000. For planning purposes, common milestones to target are 5,000, 10,000, 25,000, and 50,000 monthly pageviews — each of which represents a meaningful step up in potential revenue.</p>
+
+        <h3>Ads Per Page</h3>
+        <p>Most publishers run between two and four ad units per page. Google no longer enforces a strict maximum, but user experience and page speed should be your practical limits. More ad units dilutes the value of each individual impression and can drive readers away. Three is a sensible default for most sites.</p>
+
+        <h3>Click-Through Rate (CTR)</h3>
+        <p>CTR is the percentage of ad impressions that result in a click. For most publishers running standard display ads, a CTR between 1% and 3% is normal. Below 1% suggests your ads are not well placed or your audience is not engaged. Above 5% for a sustained period may attract scrutiny from Google. For conservative planning, use 1.5% to 2%.</p>
+
+        <h3>Cost Per Click (CPC)</h3>
+        <p>CPC is the amount an advertiser pays when someone clicks their ad on your site. This is the variable with the widest range. In low-competition niches, CPC might average $0.05 to $0.15. In finance or insurance, it can reach $2 to $10 or more. For a general content site, $0.20 to $0.50 is a reasonable baseline assumption.</p>
+
+        <h2>Working Through a Real Example</h2>
+        <p>Let us say you are building a site in the home improvement niche — a moderately competitive space with decent advertiser demand. After twelve months of consistent effort, you have reached 15,000 monthly pageviews. You run three ad units per page, your CTR averages 2%, and your average CPC is $0.40.</p>
+
+        <p>Plugging those numbers into the formula: 15,000 × 3 × 0.02 × $0.40 = <strong>$360 per month</strong>. That is a meaningful side income from a site that took under a year to build, and it will grow as your traffic does.</p>
+
+        <div class="tip-box"><strong>Use Our Calculator</strong><p>Rather than doing this by hand, use the UtilityCalc Hub AdSense calculator to model different scenarios instantly. You can also use the break-even feature to find out exactly how many pageviews you need to hit a specific monthly income target.</p></div>
+
+        <h2>What Changes the Numbers Most</h2>
+        <p>Of all the variables, niche selection and traffic volume have the biggest impact on your earning potential. A finance site with 10,000 monthly pageviews can easily outperform a food blog with 50,000 — purely because the CPC difference is so large. This does not mean you should chase high-CPC niches if you have no genuine interest or expertise there, but it is worth understanding the economics before you commit.</p>
+
+        <p>Traffic geography is the other big lever. If your audience is primarily from the US, UK, Canada, or Australia, your CPC and RPM will be significantly higher than if your traffic comes predominantly from regions where advertisers pay less. If you are targeting an international audience, factor this into your projections.</p>
+
+        <h2>Set Realistic Timelines</h2>
+        <p>Most websites do not start generating meaningful revenue in the first three to six months. Google takes time to trust new sites, and building traffic through organic search is a slow burn. A realistic timeline for reaching $100 to $500 per month from ad revenue is typically nine to eighteen months of consistent effort — publishing quality content, building links, and improving your site over time.</p>
+
+        <p>That timeline sounds long, but the compounding nature of SEO means that the traffic you build in year one continues to pay dividends in year two and beyond. The sites that earn passive income reliably are the ones built patiently, with a clear niche and a consistent publishing schedule.</p>
+
+        <h2>Beyond AdSense: Other Revenue Streams to Consider</h2>
+        <p>Ad revenue is a great starting point, but it is rarely the only way to monetise a content site. As your traffic grows, consider layering in affiliate marketing — recommending products or services and earning a commission on sales — which often pays significantly more than display ads for the same traffic. Digital products, sponsorships, and email newsletters are other common additions that successful publishers use to diversify their income beyond ad clicks.</p>
+
+        <div class="article-cta">
+          <h3>Run Your Own Numbers</h3>
+          <p>Use our free AdSense calculator to estimate your earning potential at any traffic level — and find the break-even pageviews for your income goals.</p>
+          <button class="btn-primary" onclick="go('adsense')">Calculate My Potential →</button>
+        </div>
+      </div>
+    </div>
+  </div></section>
+</div>
+
+<!-- ═══════ FAQ ═══════ -->
+<div id="page-faq" class="page">
+  <section class="tool-page"><div class="container">
     <button class="back-btn" onclick="go('home')">← Back</button>
-    <h1>Terms of Service</h1><div class="legal-date">Last updated: 16 April 2025</div>
-    <h2>1. Acceptance of Terms</h2><p>By accessing or using UtilityCalc Hub, you agree to be bound by these Terms. If you do not agree, please do not use the Service.</p>
-    <h2>2. Description of Service</h2><p>UtilityCalc Hub provides free, browser-based financial calculators for estimating advertising revenue. All calculations are performed client-side.</p>
-    <h2>3. No Warranties</h2><p>The Service is provided "as is" without any warranties. Results are estimates only and should not be relied upon for financial decisions.</p>
-    <h2>4. Limitation of Liability</h2><p>To the maximum extent permitted by law, UtilityCalc Hub shall not be liable for any indirect, incidental, or consequential damages.</p>
-    <h2>5. Governing Law</h2><p>These Terms are governed by the laws of England and Wales.</p>
-    <h2>6. Contact</h2><p>legal@utilitycalchub.com</p>
-  </div></div>
+    <div class="sec-tag">FAQ</div>
+    <div class="sec-h">Frequently Asked Questions</div>
+    <p class="sec-sub">Everything you need to know about AdSense revenue and how these calculators work.</p>
+    <div id="fullFaq" style="max-width:700px"></div>
+  </div></section>
 </div>
 
-<div id="page-privacy" class="page">
-  <div class="container"><div class="legal-wrap">
-    <button class="back-btn" onclick="go('home')">← Back</button>
-    <h1>Privacy Policy</h1><div class="legal-date">Last updated: 16 April 2025</div>
-    <h2>1. Information We Collect</h2><p>UtilityCalc Hub does not collect, store, or transmit any personally identifiable information. All calculator inputs remain entirely in your browser.</p>
-    <h2>2. Analytics</h2><p>We may use anonymised analytics such as Google Analytics to understand aggregate traffic patterns. No PII is collected.</p>
-    <h2>3. Advertising</h2><p>We may display advertisements via Google AdSense. Google may use cookies to serve ads. You can opt out at <a href="https://adssettings.google.com" target="_blank" rel="noopener">Google Ad Settings</a>.</p>
-    <h2>4. Cookies</h2><p>We use only essential cookies. Third-party advertising partners may place their own cookies.</p>
-    <h2>5. Contact</h2><p>privacy@utilitycalchub.com</p>
-  </div></div>
-</div>
+<!-- ═══════ LEGAL PAGES ═══════ -->
+<div id="page-terms" class="page"><div class="container"><div class="legal-wrap">
+  <button class="back-btn" onclick="go('home')">← Back</button>
+  <h1>Terms of Service</h1><div class="legal-date">Last updated: 16 April 2025</div>
+  <h2>1. Acceptance of Terms</h2><p>By accessing or using UtilityCalc Hub, you agree to be bound by these Terms. If you do not agree, please do not use the Service.</p>
+  <h2>2. Description of Service</h2><p>UtilityCalc Hub provides free, browser-based financial calculators and editorial content for informational purposes. All calculations are performed client-side.</p>
+  <h2>3. No Warranties</h2><p>The Service is provided "as is" without any warranties. Results are estimates only and should not be relied upon for financial decisions.</p>
+  <h2>4. Limitation of Liability</h2><p>To the maximum extent permitted by law, UtilityCalc Hub shall not be liable for any indirect, incidental, or consequential damages.</p>
+  <h2>5. Governing Law</h2><p>These Terms are governed by the laws of England and Wales.</p>
+  <h2>6. Contact</h2><p>legal@utilitycalchub.com</p>
+</div></div></div>
 
-<div id="page-disclaimer" class="page">
-  <div class="container"><div class="legal-wrap">
-    <button class="back-btn" onclick="go('home')">← Back</button>
-    <h1>Disclaimer</h1><div class="legal-date">Last updated: 16 April 2025</div>
-    <h2>Estimates Only</h2><p>All figures are mathematical estimates based solely on the values you enter. They do not constitute financial, investment, or business advice.</p>
-    <h2>No Guarantee of Earnings</h2><p>Actual revenue depends on advertiser competition, geographic traffic, device type, ad placement, and Google's auction dynamics.</p>
-    <h2>Currency Conversion</h2><p>Exchange rates shown are indicative. Google AdSense pays publishers in USD by default.</p>
-    <h2>Not Affiliated with Google</h2><p>UtilityCalc Hub is not affiliated with, endorsed by, or sponsored by Google LLC or Google AdSense.</p>
-  </div></div>
-</div>
+<div id="page-privacy" class="page"><div class="container"><div class="legal-wrap">
+  <button class="back-btn" onclick="go('home')">← Back</button>
+  <h1>Privacy Policy</h1><div class="legal-date">Last updated: 16 April 2025</div>
+  <h2>1. Information We Collect</h2><p>UtilityCalc Hub does not collect, store, or transmit any personally identifiable information. All calculator inputs remain entirely in your browser.</p>
+  <h2>2. Analytics</h2><p>We may use anonymised analytics such as Google Analytics to understand aggregate traffic patterns. No personally identifiable information is collected.</p>
+  <h2>3. Advertising</h2><p>We may display advertisements via Google AdSense. Google may use cookies to serve ads. You can opt out at <a href="https://adssettings.google.com" target="_blank" rel="noopener">Google Ad Settings</a>.</p>
+  <h2>4. Cookies</h2><p>We use only essential cookies. Third-party advertising partners may place their own cookies in accordance with their privacy policies.</p>
+  <h2>5. Contact</h2><p>privacy@utilitycalchub.com</p>
+</div></div></div>
 
+<div id="page-disclaimer" class="page"><div class="container"><div class="legal-wrap">
+  <button class="back-btn" onclick="go('home')">← Back</button>
+  <h1>Disclaimer</h1><div class="legal-date">Last updated: 16 April 2025</div>
+  <h2>Estimates Only</h2><p>All figures are mathematical estimates based solely on the values you enter. They do not constitute financial, investment, or business advice.</p>
+  <h2>No Guarantee of Earnings</h2><p>Actual revenue depends on advertiser competition, geographic traffic, device type, ad placement, and Google's auction dynamics.</p>
+  <h2>Currency Conversion</h2><p>Exchange rates shown are indicative. Google AdSense pays publishers in USD by default.</p>
+  <h2>Not Affiliated with Google</h2><p>UtilityCalc Hub is not affiliated with, endorsed by, or sponsored by Google LLC or Google AdSense.</p>
+</div></div></div>
+
+<!-- FOOTER -->
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
       <div class="logo">Utility<span>Calc</span> Hub</div>
-      <p>Free, fast, no-fluff calculators for website and content creators. Supports 15 currencies. All calculations happen in your browser.</p>
+      <p>Free calculators and practical guides for website owners and content creators. Supports 15 currencies. All calculations happen in your browser.</p>
     </div>
     <div class="footer-col">
       <h4>Calculators</h4>
@@ -451,15 +842,19 @@
       <a onclick="go('youtube')">YouTube Earnings</a>
     </div>
     <div class="footer-col">
-      <h4>Help</h4>
-      <a onclick="go('faq')">FAQ</a>
-      <a onclick="go('home')">How It Works</a>
+      <h4>Blog</h4>
+      <a onclick="go('article1')">Increase Your CPC</a>
+      <a onclick="go('article2')">Good RPM by Niche</a>
+      <a onclick="go('article3')">Grow to 10k Pageviews</a>
+      <a onclick="go('article4')">AdSense vs Ezoic</a>
+      <a onclick="go('article5')">Earning Potential</a>
     </div>
     <div class="footer-col">
       <h4>Legal</h4>
       <a onclick="go('terms')">Terms of Service</a>
       <a onclick="go('privacy')">Privacy Policy</a>
       <a onclick="go('disclaimer')">Disclaimer</a>
+      <a onclick="go('faq')">FAQ</a>
     </div>
   </div>
   <div class="footer-bottom">
@@ -489,46 +884,20 @@ const CURRENCIES=[
   {code:'KES',sym:'KSh',flag:'🇰🇪',name:'Kenyan Shilling',rate:129.0},
 ];
 let cur=CURRENCIES[0];
-function buildCurList(){
-  document.getElementById('curList').innerHTML=CURRENCIES.map(c=>`
-    <button class="cur-item ${c.code===cur.code?'active':''}" onclick="selectCur('${c.code}')">
-      <span style="font-size:17px;flex-shrink:0">${c.flag}</span>
-      <span class="ci-sym">${c.sym}</span>
-      <div><div style="font-weight:600">${c.code}</div><div class="ci-name">${c.name}</div></div>
-      ${c.code===cur.code?'<span class="ci-check">✓</span>':''}
-    </button>`).join('');
-}
+function buildCurList(){document.getElementById('curList').innerHTML=CURRENCIES.map(c=>`<button class="cur-item ${c.code===cur.code?'active':''}" onclick="selectCur('${c.code}')"><span style="font-size:17px;flex-shrink:0">${c.flag}</span><span class="ci-sym">${c.sym}</span><div><div style="font-weight:600">${c.code}</div><div class="ci-name">${c.name}</div></div>${c.code===cur.code?'<span class="ci-check">✓</span>':''}</button>`).join('');}
 function toggleCur(e){e.stopPropagation();document.getElementById('curDropdown').classList.toggle('open');}
-function selectCur(code){
-  cur=CURRENCIES.find(c=>c.code===code);
-  document.getElementById('curFlag').textContent=cur.flag;
-  document.getElementById('curSym').textContent=cur.sym;
-  document.getElementById('curCode').textContent=cur.code;
-  document.getElementById('curDropdown').classList.remove('open');
-  buildCurList();updateAllCurUI();recalcAll();
-}
+function selectCur(code){cur=CURRENCIES.find(c=>c.code===code);document.getElementById('curFlag').textContent=cur.flag;document.getElementById('curSym').textContent=cur.sym;document.getElementById('curCode').textContent=cur.code;document.getElementById('curDropdown').classList.remove('open');buildCurList();updateAllCurUI();recalcAll();}
 document.addEventListener('click',()=>document.getElementById('curDropdown').classList.remove('open'));
 const dec=()=>cur.code==='JPY'?0:2;
 const fmtN=n=>Math.round(n).toLocaleString('en-GB');
 const fmtM=usd=>{const v=usd*cur.rate;return cur.sym+v.toLocaleString('en-GB',{minimumFractionDigits:dec(),maximumFractionDigits:dec()});};
 const toUSD=display=>(parseFloat(display)||0)/cur.rate;
 const fromUSD=usd=>parseFloat((usd*cur.rate).toFixed(cur.code==='JPY'?0:4));
-function rateBadge(){
-  if(cur.code==='USD')return'';
-  return`<div class="rate-badge">ℹ️ Showing <strong>${cur.name} (${cur.code})</strong> at indicative rate: 1 USD = <span class="rate-val">${cur.rate.toLocaleString()} ${cur.code}</span>. Inputs accept ${cur.code}; calculations use USD internally.</div>`;
-}
+function rateBadge(){if(cur.code==='USD')return'';return`<div class="rate-badge">ℹ️ Showing <strong>${cur.name} (${cur.code})</strong> at indicative rate: 1 USD = <span class="rate-val">${cur.rate.toLocaleString()} ${cur.code}</span>.</div>`;}
 function updateAllCurUI(){
   ['hRateBadge','aRateBadge','rRateBadge','cRateBadge','yRateBadge'].forEach(id=>{const el=document.getElementById(id);if(el)el.innerHTML=rateBadge();});
-  [['h_cpc_sym','h_cpc_hint'],['a_cpc_sym','a_cpc_hint'],['a_tgt_sym','a_tgt_hint'],['r_earn_sym','r_earn_hint'],['c_spend_sym','c_spend_hint'],['c_cpm_sym',null],['y_cpm_sym','y_cpm_hint']].forEach(([s,h])=>{
-    const se=document.getElementById(s);if(se)se.textContent=cur.sym;
-    if(h){const he=document.getElementById(h);if(he)he.textContent=`in ${cur.code}`;}
-  });
-  updateMoneyInputDisplay('h_cpc',cv.h_cpc_usd);
-  updateMoneyInputDisplay('a_cpc',cv.a_cpc_usd);
-  updateMoneyInputDisplay('a_target',cv.a_target_usd);
-  updateMoneyInputDisplay('r_earn',cv.r_earn_usd);
-  updateMoneyInputDisplay('c_spend',cv.c_spend_usd);
-  updateMoneyInputDisplay('y_cpm',cv.y_cpm_usd);
+  [['h_cpc_sym','h_cpc_hint'],['a_cpc_sym','a_cpc_hint'],['a_tgt_sym','a_tgt_hint'],['r_earn_sym','r_earn_hint'],['c_spend_sym','c_spend_hint'],['c_cpm_sym',null],['y_cpm_sym','y_cpm_hint']].forEach(([s,h])=>{const se=document.getElementById(s);if(se)se.textContent=cur.sym;if(h){const he=document.getElementById(h);if(he)he.textContent=`in ${cur.code}`;}});
+  updateMoneyInputDisplay('h_cpc',cv.h_cpc_usd);updateMoneyInputDisplay('a_cpc',cv.a_cpc_usd);updateMoneyInputDisplay('a_target',cv.a_target_usd);updateMoneyInputDisplay('r_earn',cv.r_earn_usd);updateMoneyInputDisplay('c_spend',cv.c_spend_usd);updateMoneyInputDisplay('y_cpm',cv.y_cpm_usd);
   const al=document.getElementById('a_cur_label');if(al)al.textContent=cur.code;
 }
 function updateMoneyInputDisplay(id,usd){const el=document.getElementById(id);if(el)el.value=fromUSD(usd);}
@@ -542,58 +911,26 @@ function go(page){
 }
 const $=id=>document.getElementById(id);
 function set(id,val){const el=$(id);if(el)el.textContent=val;}
-function calcHome(){
-  cv.h_cpc_usd=toUSD($('h_cpc').value);
-  const pv=parseFloat($('h_pv').value)||0,ads=parseFloat($('h_ads').value)||0,ctr=parseFloat($('h_ctr').value)||0,cpc=cv.h_cpc_usd;
-  const imp=pv*ads,clks=imp*(ctr/100),daily=clks*cpc,rpm=pv>0?(daily/pv)*1000:0;
-  set('h_imp',fmtN(imp));set('h_clicks',fmtN(Math.round(clks)));set('h_daily',fmtM(daily));set('h_monthly',fmtM(daily*30));set('h_rpm',fmtM(rpm));
-}
-function calcAds(){
-  cv.a_cpc_usd=toUSD($('a_cpc').value);cv.a_target_usd=toUSD($('a_target').value);
-  const pv=parseFloat($('a_pv').value)||0,ads=parseFloat($('a_ads').value)||0,ctr=parseFloat($('a_ctr').value)||0,cpc=cv.a_cpc_usd,tgt=cv.a_target_usd;
-  const imp=pv*ads,clks=imp*(ctr/100),daily=clks*cpc,rpm=pv>0?(daily/pv)*1000:0;
-  const denom=ads*(ctr/100)*cpc,be=denom>0?Math.ceil((tgt/30)/denom):0;
-  set('a_imp',fmtN(imp));set('a_clicks',fmtN(Math.round(clks)));set('a_daily',fmtM(daily));set('a_monthly',fmtM(daily*30));set('a_annual',fmtM(daily*365));set('a_rpm',fmtM(rpm));set('a_breakeven',fmtN(be)+'/day');set('a_be_sub','to hit '+fmtM(tgt)+'/mo');
-}
-function calcRPM(){
-  cv.r_earn_usd=toUSD($('r_earn').value);
-  const pv=parseFloat($('r_pv').value)||1,rpm=(cv.r_earn_usd/pv)*1000;
-  const meaning=rpm<1?'Very low — review ad placement':rpm<3?'Below average':rpm<8?'Average range':rpm<20?'Good — strong niche':'Excellent!';
-  const colors={'Very low — review ad placement':'#f87171','Below average':'#f97316','Average range':'#7070a0','Good — strong niche':'#3dd68c','Excellent!':'#f5c842'};
-  set('r_rpm',fmtM(rpm));const el=$('r_assess');if(el){el.textContent=meaning;el.style.color=colors[meaning];}
-}
-function calcCPM(){
-  cv.c_spend_usd=toUSD($('c_spend').value);
-  const imp=parseFloat($('c_imp').value)||1,known=toUSD($('c_known').value),cpm=(cv.c_spend_usd/imp)*1000;
-  set('c_cpm',fmtM(cpm));
-  const row=$('c_imp_row');
-  if(known>0){set('c_imp_res',fmtN(Math.round((cv.c_spend_usd/known)*1000)));if(row)row.style.display='flex';}
-  else{if(row)row.style.display='none';}
-}
-function calcYT(){
-  cv.y_cpm_usd=toUSD($('y_cpm').value);
-  const views=parseFloat($('y_views').value)||0,rate=parseFloat($('y_rate_r').value)||65,cpm=cv.y_cpm_usd;
-  const mon=views*(rate/100),creator=(mon/1000)*cpm*0.55,rpm=views>0?(creator/views)*1000:0;
-  set('y_mv',fmtN(Math.round(mon)));set('y_monthly',fmtM(creator));set('y_annual',fmtM(creator*12));set('y_rpm',fmtM(rpm));
-}
+function calcHome(){cv.h_cpc_usd=toUSD($('h_cpc').value);const pv=parseFloat($('h_pv').value)||0,ads=parseFloat($('h_ads').value)||0,ctr=parseFloat($('h_ctr').value)||0,cpc=cv.h_cpc_usd,imp=pv*ads,clks=imp*(ctr/100),daily=clks*cpc,rpm=pv>0?(daily/pv)*1000:0;set('h_imp',fmtN(imp));set('h_clicks',fmtN(Math.round(clks)));set('h_daily',fmtM(daily));set('h_monthly',fmtM(daily*30));set('h_rpm',fmtM(rpm));}
+function calcAds(){cv.a_cpc_usd=toUSD($('a_cpc').value);cv.a_target_usd=toUSD($('a_target').value);const pv=parseFloat($('a_pv').value)||0,ads=parseFloat($('a_ads').value)||0,ctr=parseFloat($('a_ctr').value)||0,cpc=cv.a_cpc_usd,tgt=cv.a_target_usd,imp=pv*ads,clks=imp*(ctr/100),daily=clks*cpc,rpm=pv>0?(daily/pv)*1000:0,denom=ads*(ctr/100)*cpc,be=denom>0?Math.ceil((tgt/30)/denom):0;set('a_imp',fmtN(imp));set('a_clicks',fmtN(Math.round(clks)));set('a_daily',fmtM(daily));set('a_monthly',fmtM(daily*30));set('a_annual',fmtM(daily*365));set('a_rpm',fmtM(rpm));set('a_breakeven',fmtN(be)+'/day');set('a_be_sub','to hit '+fmtM(tgt)+'/mo');}
+function calcRPM(){cv.r_earn_usd=toUSD($('r_earn').value);const pv=parseFloat($('r_pv').value)||1,rpm=(cv.r_earn_usd/pv)*1000,meaning=rpm<1?'Very low — review ad placement':rpm<3?'Below average':rpm<8?'Average range':rpm<20?'Good — strong niche':'Excellent!',colors={'Very low — review ad placement':'#f87171','Below average':'#f97316','Average range':'#7070a0','Good — strong niche':'#3dd68c','Excellent!':'#f5c842'};set('r_rpm',fmtM(rpm));const el=$('r_assess');if(el){el.textContent=meaning;el.style.color=colors[meaning];}}
+function calcCPM(){cv.c_spend_usd=toUSD($('c_spend').value);const imp=parseFloat($('c_imp').value)||1,known=toUSD($('c_known').value),cpm=(cv.c_spend_usd/imp)*1000;set('c_cpm',fmtM(cpm));const row=$('c_imp_row');if(known>0){set('c_imp_res',fmtN(Math.round((cv.c_spend_usd/known)*1000)));if(row)row.style.display='flex';}else{if(row)row.style.display='none';}}
+function calcYT(){cv.y_cpm_usd=toUSD($('y_cpm').value);const views=parseFloat($('y_views').value)||0,rate=parseFloat($('y_rate_r').value)||65,cpm=cv.y_cpm_usd,mon=views*(rate/100),creator=(mon/1000)*cpm*0.55,rpm=views>0?(creator/views)*1000:0;set('y_mv',fmtN(Math.round(mon)));set('y_monthly',fmtM(creator));set('y_annual',fmtM(creator*12));set('y_rpm',fmtM(rpm));}
 function syncCTR(p){const v=$(p+'_ctr_r').value;$(p+'_ctr').value=v;$(p+'_ctr_lbl').textContent=parseFloat(v).toFixed(1)+'%';p==='h'?calcHome():calcAds();}
 function syncCTRi(p){const v=$(p+'_ctr').value;$(p+'_ctr_r').value=v;$(p+'_ctr_lbl').textContent=parseFloat(v).toFixed(1)+'%';p==='h'?calcHome():calcAds();}
 function syncYT(){$('y_rate_lbl').textContent=$('y_rate_r').value+'%';calcYT();}
 function recalcAll(){calcHome();calcAds();calcRPM();calcCPM();calcYT();}
 const FAQS=[
   {q:'How is AdSense daily revenue calculated?',a:'Daily revenue = Pageviews x Ads per Page x CTR x CPC. Impressions equal pageviews x ads per page; clicks equal impressions x CTR; revenue equals clicks x CPC.'},
-  {q:'What is a good CTR for AdSense?',a:'A healthy AdSense CTR typically ranges from 1% to 3%. Anything above 10% may trigger a Google policy review. Niche, high-intent content tends to earn higher CTRs.'},
+  {q:'What is a good CTR for AdSense?',a:'A healthy AdSense CTR typically ranges from 1% to 3%. Anything above 10% may trigger a Google policy review. High-intent content tends to earn higher CTRs.'},
   {q:'What is a good CPC for AdSense?',a:'Average CPC varies widely by niche. Finance and insurance can reach $2-$10, while general entertainment may be $0.05-$0.20. The global average sits around $0.10-$0.50.'},
   {q:'What is Page RPM?',a:'Page RPM (Revenue Per Mille) is your revenue per 1,000 pageviews. RPM = (Total earnings / Total pageviews) x 1,000.'},
   {q:'Is this calculator accurate?',a:'This tool provides estimates based on your inputs. Actual AdSense earnings depend on advertiser competition, ad placement, geographic traffic, device type, and seasonal variation.'},
   {q:'How does currency conversion work?',a:'All internal calculations use USD. When you select a different currency, monetary inputs are converted from your chosen currency to USD before calculating, and results are displayed back in your chosen currency using indicative exchange rates.'},
-  {q:'What is the difference between CPM and CPC?',a:'CPM (Cost Per Mille) is the rate per 1,000 impressions regardless of clicks — typical for display campaigns. CPC only charges when a user clicks — typical for AdSense performance campaigns.'},
+  {q:'What is the difference between CPM and CPC?',a:'CPM (Cost Per Mille) is the rate per 1,000 impressions regardless of clicks. CPC only charges when a user clicks — typical for AdSense performance campaigns.'},
+  {q:'Why was my AdSense application rejected?',a:'Common reasons include insufficient content, site not yet established, policy violations, or low-quality traffic. Adding original written content across multiple pages, having a clear privacy policy, and building some organic traffic before reapplying all improve your chances significantly.'},
 ];
-function buildFAQ(id,limit){
-  const el=$(id);if(!el)return;
-  const items=limit?FAQS.slice(0,limit):FAQS;
-  el.innerHTML=items.map((f,i)=>`<div class="faq-item" id="${id}_${i}"><button class="faq-q" onclick="toggleFAQ('${id}',${i})"><span>${f.q}</span><span class="faq-arrow">▾</span></button><div class="faq-a"><div class="faq-a-inner">${f.a}</div></div></div>`).join('');
-}
+function buildFAQ(id,limit){const el=$(id);if(!el)return;const items=limit?FAQS.slice(0,limit):FAQS;el.innerHTML=items.map((f,i)=>`<div class="faq-item" id="${id}_${i}"><button class="faq-q" onclick="toggleFAQ('${id}',${i})"><span>${f.q}</span><span class="faq-arrow">▾</span></button><div class="faq-a"><div class="faq-a-inner">${f.a}</div></div></div>`).join('');}
 function toggleFAQ(id,i){document.getElementById(id+'_'+i).classList.toggle('open');}
 function copyLink(){navigator.clipboard.writeText(window.location.href).then(()=>toast('Link copied!')).catch(()=>toast('Copy the URL from your address bar.'));}
 function toast(msg){const t=$('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2800);}
